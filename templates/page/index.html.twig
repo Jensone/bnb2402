@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Location courte durée à{{ title }}{% endblock %}
+{% block title %}Location courte durée à {{ title }}{% endblock %}
 
 {% block body %}
 	<div class="vh-100 d-flex column justify-content-center align-items-center {{ background }}">
 		<div class="text-center">
-			<p class="title animate__animated animate__fadeInDown">
+			<p class="title text-white animate__animated animate__fadeInDown">
 				{{ title }}
 			</p>
 			<p class="subtitle {{ title == 'kyoto' or title == 'hong kong' ? 'subtitle-reverse' : '' }} animate__animated animate__fadeIn">
 				{{ subtitle }}
 			</p>
-			<a href={{ path('rooms', {'city' : title }) }} class="mt-5 btn btn-custom btn-lg rounded-pill animate__animated animate__fadeInUp">
+			<a href="#" class="mt-5 btn btn-custom btn-lg rounded-pill animate__animated animate__fadeInUp">
 				Accéder
 			</a>
 		</div>
