@@ -54,3 +54,25 @@ symfony console make:auth
 ```
 
 Comme pour le formulaire d'inscription, il est important de préparer une ou plusieurs route pour les redirections après la connexion. Cela se passe dans l'authenticator.
+
+## Création des pages statiques
+
+La liste des pages statiques est la suivante :
+
+- Accueil ('/', home)
+- Profil ('/profile', profile)
+- Villes ('/cities', cities)
+- A propos ('/about', about)
+- Offres ('/offers', offers)
+- Contact ('/contact', contact)
+
+## Création d'un formulaire de contact
+
+Pour la création d'un formulaire de contact, nous avons utilisé la commande suivante :
+
+```bash
+symfony console make:form ContactType
+```
+
+Nous avons également mis en place une vérification des données du formulaire de contact.
+Cela se fait avec la validation des données dans le fichier 'Contact.php' dans le dossier 'src/Entity'.
