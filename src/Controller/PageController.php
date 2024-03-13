@@ -83,16 +83,6 @@ class PageController extends AbstractController
         return $this->render('page/cities.html.twig', []);
     }
 
-    // Page de contact de BnB
-    #[Route('/contact', name: 'contact')]
-    public function contact(): Response
-    {
-        $form = $this->createForm(ContactType::class);
-        // Traitement du formulaire
-        return $this->render('page/contact.html.twig', [
-            'contactForm' => $form,
-        ]);
-    }
 
     // Page d'accueil de l'application
     #[Route('/profile', name: 'profile')]
